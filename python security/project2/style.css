@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right,blueviolet,white);
+}
+.todo-container{
+ width: 400px;
+ height: fit-content;
+ background-color: white;
+ position: relative;
+ top: 50%;
+ left: 50%;
+ border-radius: 10px;
+ transform: translate(-50%,-50%);
+ padding: 10px 20px;
+}
+.title-information{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #333;
+}
+.input-data{
+    width: 90%;
+    height: 50px;
+    outline: 0;
+    border: 0;
+    background-color: #dcdcdc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 33px;
+    display: flex;
+}
+.input-data input{
+    width: 80%;
+    height: 100%;
+    outline:0;
+    border: 0;
+    background-color: transparent;
+  margin-left: 10px;
+}
+.input-data button{
+   width: 20%;
+   height: 40px;
+   position: absolute;
+   right: 60px;
+   top: 53px;
+   border-radius: 33px;
+   background-color: salmon;
+   color: white;
+   outline: 0;
+   border: 0;
+   cursor: pointer;
+   box-shadow: 2px 2px 2px 2px silver;
+}
+#container-list{
+    padding: 10px 20px;
+}
+#container-list li{
+    list-style: none;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+#container-list li::before{
+    width: 18px;
+    height: 18px;
+    background-image: url(check.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    content: '';
+    background-color: orange;
+    right: 60px;
+    border-radius: 50%;
+   
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-dollist application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-container">
+            <div class="title-information">
+                <h3>to-do-list </h3>
+            </div>
+            <div class="input-data">
+                <input type="search" name="search" id="inputbox" placeholder="send">
+                <button id="send">send</button>
+            </div>
+            <ul id="container-list">
+               <!-- <li>taha</li>
+               <li>taha1</li>
+               <li>taha2</li> -->
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    const inputbox = document.getElementById("inputbox");
+    var send = document.getElementById("send");
+    var containerlist = document.getElementById("container-list");
+    send.addEventListener('click',function(){
+        if(inputbox.value==""){
+            alert("you must enter a data ")
+        }else{
+            let li = document.createElement("li");
+            li.innerHTML=inputbox.value;
+            containerlist.appendChild(li);
+            let taha = document.createElement("x");
+            containerlist.appendChild(taha)
+        }
+    })
+
+</script>
+</html>

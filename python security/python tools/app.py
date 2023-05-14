@@ -1,0 +1,22 @@
+from tkinter import *
+from tkinter import ttk
+root=Tk()
+root.title('taha desktop[application using python]')
+root.geometry('800x460')
+root.iconbitmap('images1.png')
+frame1 = Frame(root,width=800,height=100,bg='white')
+frame1.place(x=0,y=0)
+entry1 = Entry(frame1)
+entry1.place(x=0,y=0,width=800,height=100)
+# frame2
+frame2 = Frame(root,width=800,height=360,bg='whitesmoke')
+frame2.place(x=0,y=103)
+btn1 = Button(frame2,width=20,height=5,text='1',bg='orange',fg='white',cursor='hand2')
+btn1.place(x=0,y=0)
+btn2=Button(frame2,text='2',width=20,height=5,cursor='hand2',bg='orange',fg='white')
+btn2.place(x=193,y=0)
+btn3 = Button(frame2,width=20,height=5,text='3',bg='orange',fg='white',cursor='hand2')
+btn3.place(x=383,y=0)
+btn4=Button(frame2,text='4',width=20,height=5,cursor='hand2',bg='orange',fg='white')
+btn4.place(x=583,y=0)
+root.mainloop()
